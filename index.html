@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carto AI</title>
+    <link rel="stylesheet" href="style.css"> <!-- Links to the style.css file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="CartoAI.png" alt="Carto AI Logo">
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="half-section">
+                <div class = "text-section">
+                    <h1>L'IA au service des cartes de demain</h1>
+                    <p>Nous révolutionnons la cartographie en développant des modèles d'intelligence artificielle qui s'appuient sur nos données propriétaires combinant l'imagerie thermique, 360° et LiDAR.</p>
+                    <button class="custom-button">
+                        <span class="bold-text">Contact</span>
+                    </button>
+                </div>
+                <div class= "image-section">
+                    <img src="bg03.jpg" alt="Driving in nature">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Slider Section -->
+    <!-- Logo Section (Now Static) -->
+    <section class="logo-section">
+        <div class="container">
+            <div class="logo-grid">
+                <img src="partners/nvidia.png" alt="NVIDIA Inception Program">
+                <img src="partners/Villedemain.png" alt="Ville de Demain">
+                <img src="partners/stationf.png" alt="Station F">
+                <img src="partners/ParisandCo.png" alt="Paris&Co">
+                <img src="partners/awsactivate.png" alt="AWS Activate">
+            </div>
+        </div>
+    </section>
+
+
+ <!--
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+        });
+    </script> -->
+
+    <section>  
+        <div class="container">
+            <div class="half-section">
+                <div class = "text-section">                
+                    <div class="tag">Pourquoi nous choisir</div>
+                    <h2>Nous développons nos propre modèles d'IA grâce à notre data et à notre système de captation propriétaires</h2>
+                    <p>
+                        Nous nous appuyons sur l'expérience de l'équipe qui a réalisé des captures de données géospatiales dans 6 pays depuis 2016 grâce à laquelle nous avons pu créer notre propre système de caméras géolocalisées. Grâce à ce système nous avons collecté près de 30 TO d'images thermiques qui nous on permis d'entraîner notre suite de modèles d'IA.
+                    </p>
+                </div>
+                <div class="stats-container">
+                    <div>                        
+                        <div class="stat-box">
+                            <h3 class="stat-title">30 TO</h3>
+                            <p>D'images utilisées pour entraîner nos modèles, 100% propriétaires</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>1+ Million</h3>
+                            <p>De logements capturés</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="thermal-section">
+        <div class="container">
+            <div class="thermal-content">
+                <!-- Left: Static Image -->
+                <div class="thermal-image">
+                    <img src="thermal-image.jpeg" alt="Thermal Imaging">
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="thermal-text">
+                    <h2>La cartographie thermique à l'échelle des villes</h2>
+                    <p>Grâce à notre service de cartographie thermique les collecivités et leurs partenaires peuvent identifier des solutions concrêtes afin de : </p>
+                    <ul class="thermal-benefits">
+                        <li>✔ Réduire les émissions de CO2</li>
+                        <li>✔ Améliorer le bien être</li>
+                        <li>✔ réduire la précarité énergétique</li>
+                        <li>✔ Faire des économies</li>
+                        <li>✔ Economiser de l'énergie</li>                        
+                    </ul>
+                    <button class="custom-button">Contactez-nous</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Left: Contact Details -->
+                <div class="contact-details">
+                    <h2>Contact</h2>
+                    <div class="contact-info">                                                
+                        <div>                            
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@skilledmapping.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form">
+                    <form action="contact.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Nom..." required>
+                            <input type="email" name="email" placeholder="Email..." required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="number" placeholder="Téléphone...">
+                            <input type="text" name="subject" placeholder="Sujet..." required>
+                        </div>
+                        <textarea name="message" placeholder="Message..." required></textarea>
+                        <button type="submit" class="submit-btn">Envoyer →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <hr>
+            <p>© Carto AI 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>
