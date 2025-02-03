@@ -25,6 +25,11 @@ p {
   color: #191919;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Header Styling */
 .header {
     position: fixed;
@@ -159,31 +164,46 @@ body {
 
 
 /* Logos section */
-.logo-section {
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Wrapper for the logo slider */
+.logo-slider {
+    overflow: hidden; /* Hides overflow */
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+/*    background: white; */
+    padding: 20px 0;
 }
 
-.logo-grid {
+/* Track for the moving logos */
+.logo-track {
     display: flex;
-    justify-content: space-between; /* Spaces logos evenly */
-    align-items: center;
-    flex-wrap: wrap; /* Ensures responsiveness */
-    max-width: 100%;
-    gap: 40px;
+    gap: 40px; /* Space between logos */
+    width: max-content;
+    animation: scrollLogos 20s linear infinite;
 }
 
-.logo-grid img {
-    max-height: 40px; /* Adjust size as needed */
+/* Logo styling */
+.logo-track img {
+    height: 50px; /* Adjust logo size */
     width: auto;
-    filter: grayscale(100%); /* Makes logos black & white */
+    filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;
 }
 
-.logo-grid img:hover {
-    filter: grayscale(0%); /* Restores color on hover */
+/* Remove grayscale effect on hover */
+.logo-track img:hover {
+    filter: grayscale(0%);
+}
+
+/* Keyframes for infinite scrolling */
+@keyframes scrollLogos {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 
@@ -363,6 +383,12 @@ body {
     background-color: #333;
 }
 
+.success-message {
+    font-size: 16px;
+    color: green;
+    margin-top: 10px;
+}
+
 
 /*Footer*/
 
@@ -385,4 +411,134 @@ body {
 .footer p {
     margin: 0;
     font-weight: 400;
+}
+
+/* ✅ General: Mobile-Friendly Styles */
+@media (max-width: 1024px) {
+    .container {
+        width: 100%; /* Reduce width to adapt */
+/*        padding: 0 20px;*/
+    }
+
+    h1 {
+        font-size: 3em; /* Reduce main heading size */
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+/* ✅ Header Adjustments for Mobile */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: row; /* Ensures logo and text are in a row */
+        align-items: center; /* Aligns vertically */
+        justify-content: flex-start; /* Aligns everything to the left */
+        height: auto;
+        padding: 15px; /* Proper padding */
+        gap: 10px; /* Adds spacing between logo and text */
+    }
+
+    .header .container {        
+        padding: 0 15px; /* Proper padding */
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 40px; /* Adjust logo size */
+        margin-right: 10px; /* Adds spacing between logo and text */
+    }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 90%;
+  }
+}
+
+/* ✅ Half-Section (Hero Section with Image & Text) */
+@media (max-width: 768px) {
+    .half-section {
+        flex-direction: column;
+        margin: 0;
+/*        text-align: center;*/
+    }
+
+    .text-section, .image-section {
+        width: 100%;
+    }
+
+    .text-section {
+        padding: 0;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ✅ Logos Section (Partners) */
+@media (max-width: 768px) {
+    .logo-track {
+        animation: scrollLogos 15s linear infinite; /* Speed up on mobile */
+        gap: 20px;
+    }
+
+    .logo-track img {
+        height: 40px; /* Smaller logos on mobile */
+    }
+}
+
+/* ✅ Stats Section (Pourquoi Nous Choisir) */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .stat-box {
+        width: 80%; /* Full width for better stacking */
+        margin-left: 0;
+        margin-righ: auto;
+    }
+}
+
+/* ✅ Thermal Section (Image & Text) */
+@media (max-width: 768px) {
+    .thermal-content {
+        flex-direction: column;
+/*        text-align: center;*/
+    }
+
+    .thermal-image, .thermal-text {
+        width: 100%;
+    }
+}
+
+/* ✅ Contact Form Section */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;        
+    }
+
+    .contact-form, .contact-details {
+        width: 90%;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+    }
 }
