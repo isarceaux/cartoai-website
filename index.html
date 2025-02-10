@@ -32,14 +32,18 @@
         <div class="container">
             <div class="half-section">
                 <div class = "text-section">
-                    <h1>L'IA au service des cartes de demain</h1>
-                    <p>Nous révolutionnons la cartographie en développant des modèles d'intelligence artificielle qui s'appuient sur nos données propriétaires combinant l'imagerie thermique, 360° et LiDAR.</p>
-                    <button class="custom-button" onclick="scrollToContact()">
-                        <span class="bold-text">Contact</span>
-                    </button>
+                    <h1>Une image (thermique) vaut mille mots</h1>
+                    <p>Nos images thermiques rendent visible l'invisible en dévoilant les problèmes d'isolation des bâtiments à l'échelle des villes.</p>
                 </div>
-                <div class= "image-section">
+                <!-- <div class= "image-section">
                     <img src="bg03.jpg" alt="Driving in nature">
+                </div>
+                <div style="width: 640px; height: 480px; border-radius: 15px; overflow: hidden;"> -->
+                  <video width="640" height="480" autoplay muted loop preload="metadata" style="border-radius: 15px; object-fit: cover;">
+                  <source src="CARTO_AI.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
                 </div>
             </div>
         </div>
@@ -128,7 +132,9 @@
                         <li>✔ Faire des économies</li>
                         <li>✔ Economiser de l'énergie</li>                        
                     </ul>
-                    <button class="custom-button" onclick="scrollToContact()">Contactez-nous</button>
+                    <a href="mailto:contact@cartoai.fr?subject=Nouveau%20Contact%20CartoAI">
+                        <button class="custom-button" onclick="scrollToContact()">Contactez-nous</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -136,22 +142,18 @@
 
      <section id="contact" class="contact-section">
         <div class="container">
-            <div class="contact-content">
-                <!-- Left: Contact Details -->
-                <div class="contact-details">
-                    <h2>Contact</h2>
-                    <div class="contact-info">                                                
-                        <div>                            
-                            <div>
-                                <h4>Email</h4>
-                                <p>contact@cartoai.fr</p>
-                            </div>
-                        </div>
+            <h2>Contact</h2>
+                <div>                            
+                    <div>
+                        <h4>Email</h4>
+                            <p>contact@cartoai.fr</p>
                     </div>
                 </div>
+            
+        </div>
 
                 <!-- Right: Contact Form -->
-                <div class="contact-form">
+<!--                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Nom..." required>
@@ -168,9 +170,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
+    </section> -->
 
 
     <footer class="footer">
