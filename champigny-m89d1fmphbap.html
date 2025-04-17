@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carto AI - Champigny</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="CartoAI.png" alt="Carto AI Logo">
+      </div>
+    </div>
+  </header>
+
+  <main style="margin-top: 100px;">
+    <section class="champigny-map-section">
+      <div class="champigny-map-wrapper">
+        <img src="93d0d273-c40f-4bd6-a7b4-2e0e8f3e845b.png" alt="Champigny Thermal Map" class="champigny-map-image">
+        <div class="champigny-map-point color-prio" style="top: 39.26%; left: 70.98%;" onclick="openChampignyModal('mp4/13.mp4', 'Façade nord captée à 5h30. Fortes pertes de chaleur.')">13</div>
+        <div class="champigny-map-point color-grey" style="top: 30.72%; left: 62.57%;" onclick="openChampignyModal('mp4/1.mp4', 'Façade nord captée à 5h30. Fortes pertes de chaleur.')">1</div>
+        <div class="champigny-map-point color-other" style="top: 76.98%; left: 24.29%;" onclick="openChampignyModal('mp4/RESIDENTIAL_1.mp4', 'Façade nord captée à 5h30. Fortes pertes de chaleur.')">R1</div>
+        <!-- Add more points here -->
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="champignyModal" class="champigny-modal-overlay" onclick="closeChampignyModal()">
+      <div class="champigny-modal-content" onclick="event.stopPropagation()">
+        <span class="champigny-modal-close" onclick="closeChampignyModal()">&times;</span>
+        <video id="champignyVideo" controls>
+          <source id="champignySource" src="" type="video/mp4">
+        </video>
+        <div class="champigny-modal-text" id="champignyText"></div>
+      </div>
+    </div>
+  </main>
+
+<script>
+function openChampignyModal(videoFile, description) {
+  const video = document.getElementById('champignyVideo');
+  const source = document.getElementById('champignySource');
+  const text = document.getElementById('champignyText');
+
+  source.src = videoFile;
+  video.load();
+  video.play();
+  text.textContent = description;
+  document.getElementById('champignyModal').style.display = 'flex';
+}
+
+function closeChampignyModal() {
+  const modal = document.getElementById('champignyModal');
+  const video = document.getElementById('champignyVideo');
+  modal.style.display = 'none';
+  video.pause();
+  video.currentTime = 0;
+}
+</script>
+
+</body>
+</html>

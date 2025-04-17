@@ -569,3 +569,111 @@ body {
         width: 100%;
     }
 }
+
+/* Champigny specific elements */
+
+/* --- Champigny Map Section --- */
+.champigny-map-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+.champigny-map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* --- Clickable Dots --- */
+.champigny-map-point {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  font-family: "Instrument Sans", serif;
+}
+
+/* --- Modal Overlay --- */
+.champigny-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+
+.champigny-modal-content {
+  background: white;
+  max-width: 900px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  font-family: "Instrument Sans", serif;
+}
+
+.champigny-modal-content video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.champigny-modal-text {
+  flex: 1;
+  font-size: 1em;
+  color: #191919;
+}
+
+.champigny-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.8rem;
+  background: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #191919;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.color-prio {
+  background-color: #5133EA; /* Your main purple */
+}
+
+.color-grey {
+  background-color: #e4e4e4; /* Example green */
+}
+
+.color-other {
+  background-color: #F68C1F; /* Example orange */
+}
+
+.color-prio,
+.color-grey,
+.color-other {
+  font-family: "Instrument Sans", serif;
+}
