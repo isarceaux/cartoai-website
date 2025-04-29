@@ -660,20 +660,175 @@ body {
   z-index: 10;
 }
 
-.color-prio {
-  background-color: #5133EA; /* Your main purple */
+.color-0 {
+  background-color: #779824;
 }
 
-.color-grey {
-  background-color: #e4e4e4; /* Example green */
+.color-1 {
+  background-color: #779824;
 }
 
+.color-2 {
+  background-color: #F8C0B5;
+
+}
+
+.color-3 {
+  background-color: #F2917D;
+}
+.color-4 {
+  background-color: #ED6145;
+}
+.color-5 {
+  background-color: #E03616;
+    border: #191919;
+}
+.color-na {
+  background-color: lightgray;
+}
 .color-other {
-  background-color: #F68C1F; /* Example orange */
+  background-color: black;
+  color: white;
 }
 
-.color-prio,
-.color-grey,
+.color-0,
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5,
+.color-na,
 .color-other {
   font-family: "Instrument Sans", serif;
+}
+
+.legend-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #FAFAFA;
+  border-radius: 12px;
+  font-family: "Instrument Sans", serif;
+  text-align: center;
+}
+
+.legend-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #191919;
+}
+
+.legend-scale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 10px;
+}
+
+.scale-block {
+  flex: 1;
+  height: 20px;
+  margin: 0 2px;
+  border-radius: 4px;
+  border: 1px solid #191919;
+}
+
+.scale-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  color: #333;
+  margin-top: 5px;
+  padding: 0 5px;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #333;
+}
+
+.legend-color {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #191919;
+}
+
+/* === Centered layout styling === */
+.centered .centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.centered .centered-title {
+  text-align: center;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.centered h2 {
+  font-size: 2.2em;
+  line-height: 1.4em;
+  color: #191919;
+  font-family: "Instrument Sans", serif;
+  font-weight: 600;
+}
+
+.centered .centered-footer {
+  text-align: center;
+}
+
+.centered .centered-footer hr {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.centered .centered-footer p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Ensure centered logo stays centered at all breakpoints */
+.centered-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.centered-header .centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.centered-header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.centered-header .logo img {
+  height: 30px;
+  max-width: 200px;
+  margin: 0 auto;
 }

@@ -7,9 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="header">
-    <div class="container">
+<body class="centered">
+  <header class="header centered-header">
+    <div class="centered-container">
       <div class="logo">
         <img src="CartoAI.png" alt="Carto AI Logo">
       </div>
@@ -18,12 +18,63 @@
 
   <main style="margin-top: 100px;">
     <section class="champigny-map-section">
+      <div class="centered-title">
+        <h2>Diagnostic thermique du secteur des Luats à Champigny-sur-Marne</h2>
+      </div>
       <div class="champigny-map-wrapper">
         <img src="93d0d273-c40f-4bd6-a7b4-2e0e8f3e845b.png" alt="Champigny Thermal Map" class="champigny-map-image">
-        <div class="champigny-map-point color-prio" style="top: 39.26%; left: 70.98%;" onclick="openChampignyModal('mp4/13.mp4', 'Façade nord captée à 5h30. Fortes pertes de chaleur.')">13</div>
-        <div class="champigny-map-point color-grey" style="top: 30.72%; left: 62.57%;" onclick="openChampignyModal('mp4/1.mp4', 'Façade nord captée à 5h30. Fortes pertes de chaleur.')">1</div>
-        <div class="champigny-map-point color-other" style="top: 76.98%; left: 24.29%;" onclick="openChampignyModal('mp4/RESIDENTIAL_1.mp4', 'Façade nord captée à 5h30. Fortes pertes de chaleur.')">R1</div>
-        <!-- Add more points here -->
+        <div class="champigny-map-point color-1" style="top: 30.72%; left: 62.57%;" onclick="openChampignyModal('mp4/1.mp4', '<h3>Analyse</h3>Isolation intérieure supposée. <hr> Recommandation d\'amélioration : vitrage, ou ajout de volets.')">1</div>
+<div class="champigny-map-point color-4" style="top: 75.23%; left: 87.22%;" onclick="openChampignyModal('mp4/3.mp4', '<h3>Analyse</h3>Faible isolation de la bâtisse, pertes de chaleur importantes constatées au niveau des murs.<hr> Recommandation : mieux isoler les parties de type bureau ou accueil du public')">3</div>
+<div class="champigny-map-point color-4" style="top: 82.23%; left: 88.59%;" onclick="openChampignyModal('mp4/4.mp4', '<h3>Analyse</h3>Faible niveau d\'isolation : pertes importantes au niveau de la porte de garage et des murs du RDC où se trouvent probablement des bureaux.<hr> Recommandation : mieux isoler les parties de type bureau.')">4</div>
+<div class="champigny-map-point color-0" style="top: 88.59%; left: 88.07%;" onclick="openChampignyModal('mp4/5.mp4', '<h3>Analyse</h3>Bâtiment faiblement isolé et comportant de nombreux ouvrants, identifié comme étant un garage automobile.')">5</div>
+<div class="champigny-map-point color-na" style="top: 89.92%; left: 78.08%;" onclick="openChampignyModal('mp4/6.mp4', '<h3>Analyse</h3>En raison du porche devant l\'entrée et de la faible hauteur du bâtiment, il est difficile d\'interpréter la performance thermique de ce dernier.')">6</div>
+<div class="champigny-map-point color-3" style="top: 71.03%; left: 72.92%;" onclick="openChampignyModal('mp4/7.mp4', '<h3>Analyse</h3>Anomalies thermiques détectées : pertes de chaleurs irrégulières et particulièrement soutenue sur les murs du RDC.<hr> Recommandation : isoler les murs par l\'intérieur et / ou l\'extérieur. ')">7</div>
+<div class="champigny-map-point color-4" style="top: 74.6%; left: 74.45%;" onclick="openChampignyModal('mp4/8.mp4', '<h3>Analyse</h3>Pertes de chaleur importantes au niveau des vitrages du RDC qui sont par ailleurs nombreux.<hr> Recommandations : changer en priorité les baies vitrées du RDC et / ou ajouter des volets.')">8</div>
+<div class="champigny-map-point color-1" style="top: 80.48%; left: 75.6%;" onclick="openChampignyModal('mp4/9.mp4', '<h3>Analyse</h3>Anomalies thermiques détectées sur la façade : les irrégularités témoignent d\'une mauvaise performance thermique.<hr> Recommandation : comme il s\'agit d\'un magasin-entrepôt de fruits et légumes, la problématique peut se situer autour du refroidissement.')">9</div>
+<div class="champigny-map-point color-4" style="top: 86.63%; left: 78.29%;" onclick="openChampignyModal('mp4/10.mp4', '<h3>Analyse</h3>Importantes anomalies thermiques détectées sur la façade : irrégularités et écarts de températures importants entre le RDC et l\'étage.<hr> Recommandation : améliorer l\'isolation des murs pour améliorer les conditions de travail et d\'accueil des commerces tout en réduisant la consommation d\'énergie.')">10</div>
+<div class="champigny-map-point color-5" style="top: 57.73%; left: 73.03%;" onclick="openChampignyModal('mp4/11.mp4', '<h3>Analyse</h3>Importantes anomalies thermiques détectées sur la façade : irrégularités et points chauds indiquent un niveau d\'isolation des murs faible.<hr> Recommandation : une isolation de l\'ensemble des murs par l\'intérieur et / ou l\'extérieur peut-être envisagée.')">11</div>
+<div class="champigny-map-point color-4" style="top: 41.99%; left: 65.19%;" onclick="openChampignyModal('mp4/12.mp4', '<h3>Analyse</h3>Multiples anomalies thermiques détectées sur la façade et les ouvrants : pertes de chaleur importantes.<hr> Recommandation : lorsqu\'il s\'agit de garage (MIDAS) cela ne pose pas problème, mais pour les autres commerces, envisager une rénovation énergétique pour améliorer le confort thermique.')">12</div>
+<div class="champigny-map-point color-0" style="top: 39.26%; left: 70.98%;" onclick="openChampignyModal('mp4/13.mp4', '<h3>Analyse</h3>Bâtiment faiblement isolé et comportant de nombreux ouvrants, identifié comme étant un garage automobile.')">13</div>
+<div class="champigny-map-point color-na" style="top: 74.46%; left: 81.49%;" onclick="openChampignyModal('mp4/14.mp4', '<h3>Analyse</h3>Présence d\'un porche rendant l\'interprétation de la performance thermique difficile. La température sous un porche apparaîtra toujours plus élevée.')">14</div>
+<div class="champigny-map-point color-3" style="top: 82.93%; left: 84.12%;" onclick="openChampignyModal('mp4/15.mp4', '<h3>Analyse</h3>Irrégularités proches du toit indiquant de potentiels niveaux d\'humidité élevés. Faible isolation autour de la porte de garage.<hr> Recommandation : une analyse thermique plus approfondie et également depuis l\'intérieur permettra de fournir des recommandations plus précises.')">15</div>
+<div class="champigny-map-point color-5" style="top: 89.22%; left: 84.12%;" onclick="openChampignyModal('mp4/16.mp4', '<h3>Analyse</h3>Très fortes anomalies thermiques détectées sur la façade et le contours des fenêtres.<hr> Recommandations : réaliser une analyse plus approfondie de l\'état général du bâtiment et de son usage.')">16</div>
+<div class="champigny-map-point color-4" style="top: 21.69%; left: 46%;" onclick="openChampignyModal('mp4/17.mp4', '<h3>Analyse</h3>Anomalies thermiques détectées : écarts de températures importants entre le RDC et l\'étage au niveau des murs, faible niveau d\'isolation thermique.<hr> Recommandation : réaliser une isolation extérieure / intérieure du bâtiment.')">17</div>
+<div class="champigny-map-point color-4" style="top: 25.4%; left: 41.22%;" onclick="openChampignyModal('mp4/18.mp4', '<h3>Analyse</h3>Fuites de chaleur détectées au niveau des planchers du RDC et de l\'étage supérieur et perméabilités thermiques de la façade avant.<hr> Recommandation : améliorer l\'isolation générale du bâtiment.')">18</div>
+<div class="champigny-map-point color-3" style="top: 36.74%; left: 39.43%;" onclick="openChampignyModal('mp4/19.mp4', '<h3>Analyse</h3>Caractéristiques hétérogènes sur le bâtiment: certaines parties ont bénéficié d\'une isolation extérieure mais d\'autres pas encore.<hr> Recommandation : poursuivre le travail d\'isolation par l\'extérieur pour que l\'ensemble de l\'enveloppe soit mieux isolée.')">19</div>
+<div class="champigny-map-point color-0" style="top: 44.51%; left: 39.91%;" onclick="openChampignyModal('mp4/20.mp4', '<h3>Analyse</h3>La bâtiment dispose d\'un globalement bon niveau d\'isolation au niveau des murs ainsi que sur les ouvrants.')">20</div>
+<div class="champigny-map-point color-3" style="top: 52.48%; left: 41.43%;" onclick="openChampignyModal('mp4/21.mp4', '<h3>Analyse</h3>Anomalies thermiques sur la façade du bâtiment. Le bâtiment semble être à usage mixte : bureau et accueil du public.<hr> Recommandation : améliorer en priorité l\'isolation des murs.')">21</div>
+<div class="champigny-map-point color-2" style="top: 67.25%; left: 38.75%;" onclick="openChampignyModal('mp4/22.mp4', '<h3>Analyse</h3>Peu d\'anomalies thermiques détectées sur la façade, quelques vitrages sur la façade Nord au RDC présentent des caractéristiques d\'isolation moindre.<hr> Recommandation : changer les vitrages RDC façade Nord pour des vitrages plus isolants.')">22</div>
+<div class="champigny-map-point color-2" style="top: 80.48%; left: 43.38%;" onclick="openChampignyModal('mp4/23.mp4', '<h3>Analyse</h3>Irrégularités sur la façade dûes aux caractéristiques architecturales. Fuites de chaleurs notables au niveau des vitrages.<hr> Recommandation : changer les fenêtres et / ou ajouter des volets pour améliorer l\'isolation.')">23</div>
+<div class="champigny-map-point color-4" style="top: 80.48%; left: 34.17%;" onclick="openChampignyModal('mp4/24.mp4', '<h3>Analyse</h3>Anomalies thermiques détectées sur la façade dénotant d\'une importante fuite de chaleur.<hr> Recommandation : mettre en place une isolation intérieure et / ou extérieure sur les parties le nécessitant.')">24</div>
+<div class="champigny-map-point color-3" style="top: 68.23%; left: 31.55%;" onclick="openChampignyModal('mp4/25.mp4', '<h3>Analyse</h3>Pertes de chaleur au niveau des sols, et irrégularités en façade. Présence possible d\'une isolation intérieure.<hr> Recommandation : isoler les sols en priorité.')">25</div>
+<div class="champigny-map-point color-3" style="top: 57.03%; left: 33.49%;" onclick="openChampignyModal('mp4/26.mp4', '<h3>Analyse</h3>Pertes de chaleur principalement au niveau des fenêtres et au niveau du sol du RDC.<hr> Recommandation : installer des volets et / ou remplacer les fenêtres.')">26</div>
+<div class="champigny-map-point color-5" style="top: 57.73%; left: 30.28%;" onclick="openChampignyModal('mp4/27.mp4', '<h3>Analyse</h3>Très fortes anomalies thermiques, site produisant de la chaleur de part son activité.<hr> Recommandation : potentiel candidat pour projet de récupération de chaleur ?')">27</div>
+<div class="champigny-map-point color-0" style="top: 59.48%; left: 26.92%;" onclick="openChampignyModal('mp4/28.mp4', '<h3>Analyse</h3>Pas de fuite de chaleur notable.')">28</div>
+<div class="champigny-map-point color-na" style="top: 58.64%; left: 22.34%;" onclick="openChampignyModal('mp4/29.mp4', '<h3>Analyse</h3>La distance du bâtiment, la réflexion des vitrages et la présence d\'un camion devant le bâtiment empêchent de pouvoir distinguer des caractéristiques thermiques notables.')">29</div>
+<div class="champigny-map-point color-5" style="top: 60.6%; left: 8.68%;" onclick="openChampignyModal('mp4/30.mp4', '<h3>Analyse</h3>De fortes pertes de chaleur sont constatées au niveau des murs, laissant présager d\'une consommation d\'énergie importante.<hr> Recommandation : effectuer une isolation des murs par l\'intérieur et / ou l\'extérieur. ')">30</div>
+<div class="champigny-map-point color-na" style="top: 61.93%; left: 6.57%;" onclick="openChampignyModal('mp4/31.mp4', '<h3>Analyse</h3>La distance du bâtiment, la présence d\'une palissade et la présence d\'un porche rendent l\'interprétation des anomalies thermiques compliquées.')">31</div>
+<div class="champigny-map-point color-na" style="top: 21.69%; left: 32.86%;" onclick="openChampignyModal('mp4/32.mp4', '<h3>Analyse</h3>Le bâtiment est principalement constitué de vitrages qui sont directement exposés au soleil, cela n\'implique pas nécessairement que les vitrages manquent d\'isolation.')">32</div>
+<div class="champigny-map-point color-1" style="top: 22.74%; left: 28.44%;" onclick="openChampignyModal('mp4/33.mp4', '<h3>Analyse</h3>Quelques fuites de chaleur uniquement au niveau du sol.')">33</div>
+<div class="champigny-map-point color-4" style="top: 24.49%; left: 25.76%;" onclick="openChampignyModal('mp4/34.mp4', '<h3>Analyse</h3>Irrégularités thermiques notables sur la façade, RDC chaud, et anomalies au niveau de l\'entresol.<hr> Recommendation : envisager une rénovation thermique pour améliorer le confort thermique des occupants.')">34</div>
+<div class="champigny-map-point color-1" style="top: 19.24%; left: 27.6%;" onclick="openChampignyModal('mp4/35.mp4', '<h3>Analyse</h3>Pertes de chaleur limitées et enveloppe relativement bien isolée.')">35</div>
+<div class="champigny-map-point color-4" style="top: 15.75%; left: 29.6%;" onclick="openChampignyModal('mp4/36.mp4', '<h3>Analyse</h3>Bien qu\'il s\'agisse d\'un garage automobile, on constate que les espaces bureaux sont chauffés et mal isolés et génèrent donc probablement une surconsommation d\'énergie.<hr> Recommandation : isoler au moins la partie bureaux au niveau des murs.')">36</div>
+<div class="champigny-map-point color-0" style="top: 17.49%; left: 21.45%;" onclick="openChampignyModal('mp4/37.mp4', '<h3>Analyse</h3>Site logistique a priori non chauffé.<hr> Pas de recommandation particulière en raison de l\'usage du site.')">37</div>
+<div class="champigny-map-point color-0" style="top: 22.74%; left: 15.77%;" onclick="openChampignyModal('mp4/39.mp4', '<h3>Analyse</h3>Pas de fuite de chaleur notable.')">39</div>
+<div class="champigny-map-point color-na" style="top: 30.51%; left: 11.25%;" onclick="openChampignyModal('mp4/40.mp4', '<h3>Analyse</h3>Le bâtiment est partiellement exposé au soleil. Il semble cependant présenter les mêmes caractéristiques que des sites accueillant du public dans la zone et servant également d\'entrepôt.')">40</div>
+<div class="champigny-map-point color-2" style="top: 36.11%; left: 11.83%;" onclick="openChampignyModal('mp4/41.mp4', '<h3>Analyse</h3>Site potentiellement peu ou pas chauffé mais pouvant présenter des inefficiences thermiques.<hr> Recommandation : réaliser une analyse thermique complémentaire et approfondie.')">41</div>
+<div class="champigny-map-point color-4" style="top: 44.65%; left: 12.36%;" onclick="openChampignyModal('mp4/42.mp4', '<h3>Analyse</h3>Irrégularités thermiques notables sur la façade laissant présager d\'un bâtiment faiblement isolé. Lorsqu\'il s\'agit du garage ne pose pas forcément de problèmes aux usagers, cependant pour la partie commerce (quincaillerie) ou bureau cela gagnerait à être amélioré.')">42</div>
+<div class="champigny-map-point color-na" style="top: 55.07%; left: 10.99%;" onclick="openChampignyModal('mp4/43.mp4', '<h3>Analyse</h3>Site industriel en extérieur principalement. Partie en intérieure couvertes et vitrées ne permettant pas d\'interpréter la performance thermique.')">43</div>
+<div class="champigny-map-point color-3" style="top: 34.99%; left: 34.75%;" onclick="openChampignyModal('mp4/44.mp4', '<h3>Analyse</h3>Des anomalies thermiques peuvent être remarquées sur la façade au niveau de la partie bureau, laissant présager d\'une mauvaise isolation de l\'enveloppe.<hr> Recommandation : le bâtiment est adapté à un site industriel / logistique non chauffé mais ne l\'est pas pour une partie bureau.')">44</div>
+<div class="champigny-map-point color-4" style="top: 34.64%; left: 30.23%;" onclick="openChampignyModal('mp4/45.mp4', '<h3>Analyse</h3>D\'importantes anomalies thermiques sont détectables sur la partie bureau sur le mur et au niveau de la porte d\'entrée.<hr> Recommandation : le bâtiment est adapté à un site industriel / logistique non chauffé mais ne l\'est pas pour une partie bureau.')">45</div>
+<div class="champigny-map-point color-3" style="top: 34.22%; left: 26.92%;" onclick="openChampignyModal('mp4/46.mp4', '<h3>Analyse</h3>Problèmes d\'isolation au niveau du sol et du contour des fenêtres.<hr> Recommandation : améliorer en priorité l\'isolation du sol.')">46</div>
+<div class="champigny-map-point color-5" style="top: 33.94%; left: 23.92%;" onclick="openChampignyModal('mp4/47.mp4', '<h3>Analyse</h3>Pertes de chaleurs importantes au niveau des fenêtres, anomalies thermiques nombreuses sur la façade, fuites thermiques au niveau de l\'entresol.<hr> Recommandation : envisager un diagnostic détaillé de l\'état du bâtiment.')">47</div>
+<div class="champigny-map-point color-0" style="top: 33.94%; left: 19.72%;" onclick="openChampignyModal('mp4/48.mp4', '<h3>Analyse</h3>Site logistique non chauffé et ouvert.')">48</div>
+<div class="champigny-map-point color-5" style="top: 40.24%; left: 18.4%;" onclick="openChampignyModal('mp4/49.mp4', '<h3>Analyse</h3>Fortes pertes de chaleur et anomalies thermiques au niveau de la façade, des contours des fenêtres, et des entresols.<hr> Recommandation : envisager un diagnostic détaillé de l\'état du bâtiment.')">49</div>
+<div class="champigny-map-point color-0" style="top: 46.12%; left: 21.29%;" onclick="openChampignyModal('mp4/50.mp4', '<h3>Analyse</h3>Site logistique principalement ouvert. L\'interprétation est cependant rendue difficile par la présence d\'un porche.')">50</div>
+<div class="champigny-map-point color-5" style="top: 53.6%; left: 18.4%;" onclick="openChampignyModal('mp4/51.mp4', '<h3>Analyse</h3>Importantes anomalies thermiques détectées sur la façade et possibles fuites de chaleurs par les surfaces vitrées ; probable consommation énergétique très élevée pour maintenir le bâtiment à température ambiante.<hr> Recommandation : envisager une rénovation complète de l\'enveloppe du bâtiment.')">51</div>
+<div class="champigny-map-point color-other" style="top: 76.98%; left: 24.29%;" onclick="openChampignyModal('mp4/RESIDENTIAL_1.mp4', '<h3>Analyse</h3>Zone résidentielle hors périmètre')">R1</div>
+<div class="champigny-map-point color-other" style="top: 45.49%; left: 2.05%;" onclick="openChampignyModal('mp4/RESIDENTIAL_2.mp4', '<h3>Analyse</h3>Zone résidentielle hors périmètre')">R2</div>
+<div class="champigny-map-point color-other" style="top: 69.98%; left: 4.63%;" onclick="openChampignyModal('mp4/RESIDENTIAL_3.mp4', '<h3>Analyse</h3>Zone résidentielle hors périmètre')">R3</div>
       </div>
     </section>
 
@@ -37,7 +88,40 @@
         <div class="champigny-modal-text" id="champignyText"></div>
       </div>
     </div>
+
+    <section class="legend-section">
+  <h2>Légende</h2>
+      <h3>Niveau de priorité</h3>
+    <div class="legend-scale">
+      <div class="scale-block color-0"></div>
+      <div class="scale-block color-1"></div>
+      <div class="scale-block color-2"></div>
+      <div class="scale-block color-3"></div>
+      <div class="scale-block color-4"></div>
+      <div class="scale-block color-5"></div>
+    </div>
+    <div class="scale-labels">
+      <span>0</span>
+      <span>5</span>
+    </div>
+      <h3>Autres catégories</h3>
+      <div class="legend-items">
+        <div class="legend-item">
+          <div class="legend-color color-other"></div> Hors périmètre initial de l'étude
+        </div>
+        <div class="legend-item">
+          <div class="legend-color color-na"></div> Interprétation difficile
+        </div>
+      </div>
+</section>
   </main>
+
+     <footer class="footer centered-footer">
+      <div class="centered-container">
+        <hr>
+        <p>© Carto AI 2025</p>
+      </div>
+     </footer>
 
 <script>
 function openChampignyModal(videoFile, description) {
@@ -48,7 +132,7 @@ function openChampignyModal(videoFile, description) {
   source.src = videoFile;
   video.load();
   video.play();
-  text.textContent = description;
+  text.innerHTML = description;
   document.getElementById('champignyModal').style.display = 'flex';
 }
 
